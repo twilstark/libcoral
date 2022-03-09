@@ -41,7 +41,7 @@ std::string ToString(edgetpu_device_type type) {
   return "Unknown";
 }
 
-int main(int argc, char* argv[]) {
+int Check_devices(void) {
   size_t num_devices;
   std::unique_ptr<edgetpu_device, decltype(&edgetpu_free_devices)> devices(
       edgetpu_list_devices(&num_devices), &edgetpu_free_devices);

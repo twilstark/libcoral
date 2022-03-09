@@ -105,9 +105,10 @@ cc_binary(
     ],
 )
 
-cc_binary(
+cc_library(
     name = "lstpu",
     srcs = ["lstpu.cc"],
+    hdrs = ["lstpu.h"],
     deps = [
         "@libedgetpu//tflite/public:edgetpu_c",
         "@libedgetpu//tflite/public:oss_edgetpu_direct_all",  # buildcleaner: keep
