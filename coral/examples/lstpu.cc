@@ -29,7 +29,7 @@ limitations under the License.
 #include <iostream>
 #include <memory>
 
-#include "third_party/darwinn/tflite/public/edgetpu_c.h"
+#include "tflite/public/edgetpu_c.h"
 
 std::string ToString(edgetpu_device_type type) {
   switch (type) {
